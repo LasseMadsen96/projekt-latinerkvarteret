@@ -1,5 +1,4 @@
 #mainHeader{
-    min-height: 485px;
     max-height: 40vh;
     height: 40vh;
     position: relative;
@@ -61,6 +60,7 @@
 }
 main{
     margin-top: 40px;
+    min-height: 40vh;
 }
 .box-navigation{
     display: flex;
@@ -88,7 +88,7 @@ main{
 .box-navigation .box-navigation__item a h3{
     color:black;
     font-size: 2em; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 .box-navigation .box-navigation__item a .box-navigation__text{
@@ -118,6 +118,7 @@ main{
 }
 #mainFooter{
     position: relative;
+    min-height: 10vh;
 }
 #mainFooter .so-me__icons{
     position: absolute;
@@ -140,4 +141,16 @@ main{
 #mainFooter .facebook-icon{
     height:50px;
     width:50px;
+}
+#mainFooter .main-footer__rightContact{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    color: #fff;
+}
+#mainFooter .main-footer__leftContact{
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    color: #fff;
 }
