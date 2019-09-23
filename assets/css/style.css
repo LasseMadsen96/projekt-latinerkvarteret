@@ -4,6 +4,17 @@
     height: 40vh;
     position: relative;
 }
+#mainHeader .language-selection{
+    position:absolute;
+    right:20px;
+    top:10px;
+}
+#mainHeader .language-selection .lang-icon{
+    width:50px;
+    height:50px;
+    float:left;
+    margin-left:15px;
+}
 #mainHeader img{
     height: 100%;
     width: 100%;
@@ -106,8 +117,27 @@ main{
     border:4px solid #f0c0c0;
 }
 #mainFooter{
+    position: relative;
+}
+#mainFooter .so-me__icons{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0);
+}
+#mainFooter a{
+    text-decoration: none;
+    margin-left:15px;
 }
 #mainFooter .main-footer__cityscape{
     width:100%;
     height:219px;
+}
+#mainFooter .instagram-icon{
+    height:50px;
+    width:50px;
+}
+#mainFooter .facebook-icon{
+    height:50px;
+    width:50px;
 }
