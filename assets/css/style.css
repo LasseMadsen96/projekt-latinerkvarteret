@@ -1,4 +1,5 @@
 #mainHeader{
+    min-height: 485px;
     max-height: 40vh;
     height: 40vh;
     position: relative;
@@ -10,9 +11,45 @@
 #mainHeader .main-Header__text{
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    bottom: 10%;
+    transform: translate(-50%,0);
     text-align: center;
+}
+#mainHeader .main-Header__text img{
+    height: 200px;
+    width: 200px;
+}
+#mainHeader .main-Header__text h1{
+    color: #fff; 
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+}
+#mainHeader .main-Header__text h2{
+    color: #fff; 
+    font-size: 1.8em;
+    font-family: 'Montserrat', sans-serif;
+}
+#mainHeader .main-Header__text h2 span:nth-child(1){
+    color: #007d7d;
+}
+#mainHeader .main-Header__text h2 span:nth-child(2){
+    color: #b7b700;
+    
+}
+#mainHeader .main-Header__text h2 span:nth-child(3){
+    color: #d02a00;
+    
+}
+#mainHeader .main-Header__text h2 span:nth-child(4){
+    color: #dfc300;
+    
+}
+#mainHeader .main-Header__text h2 span:nth-child(5){
+    color: #f0c0c0;
+    
+}
+main{
+    margin-top: 40px;
 }
 .box-navigation{
     display: flex;
@@ -23,6 +60,9 @@
     width: 210px;
     /* border-radius: 50%; */
     position: relative;
+}
+.box-navigation .box-navigation__item a .box-navigation__img:hover{
+    box-shadow: 0 0 15px black;
 }
 .box-navigation .box-navigation__item a .box-navigation__img{
     border-radius: 50%;
@@ -64,4 +104,10 @@
 }
 .theme-color__food{
     border:4px solid #f0c0c0;
+}
+#mainFooter{
+}
+#mainFooter .main-footer__cityscape{
+    width:100%;
+    height:219px;
 }
