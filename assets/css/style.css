@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 #mainHeader{
     max-height: 40vh;
     height: 40vh;
@@ -17,6 +21,10 @@
 #mainHeader img{
     height: 100%;
     width: 100%;
+}
+#mainHeader .header-img{
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
 #mainHeader .main-Header__text{
     position: absolute;
@@ -60,6 +68,104 @@ main{
     display: flex;
     justify-content: space-evenly;
 }
+@media only screen and (min-width: 768px){
+    .flip-card__navigation{
+        display: flex;
+    }
+}
+@media only screen and (max-width: 767px){
+    #mainHeader .main-Header__text img{
+        height: 100px;
+        width: 100px;
+    }
+    
+    #mainHeader .main-Header__text h2{
+        font-size: 1em;
+    }
+    .main-Header__text .logo{
+    height: 80px;
+    }
+
+    
+    .flip-card__navigation{
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+
+    .flip-card .flip-card-inner .flip-card-front {
+        border-radius: 0;
+    }
+
+    .flip-card__navigation .flip-card{
+
+    width: 100%;
+    height: 74px;
+    }
+    
+    .flip-card__navigation .flip-card:hover .flip-card-inner {
+        transform: none;
+    }  
+    .flip-card__navigation .flip-card .flip-card-inner .flip-card-front{
+        display: none;
+    }
+    .flip-card .flip-card-inner .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: visible;
+        transform: none;
+      }
+    .flip-card .flip-card-inner .flip-card-front.theme-color__culture{
+        border:0px solid #007d7d;
+        background-color: #007d7d;
+
+    }
+    .flip-card .flip-card-inner .flip-card-front.theme-color__art{
+        border:10px solid #b7b700;
+        background-color: #b7b700;
+    }
+    .flip-card .flip-card-inner .flip-card-front.theme-color__fashion{
+        border:10px solid #d02a00;
+        background-color: #d02a00;
+    }
+    .flip-card .flip-card-inner .flip-card-front.theme-color__design{
+        border:10px solid #dfc300;
+        background-color: #dfc300;
+    }
+    .flip-card .flip-card-inner .flip-card-front.theme-color__food{
+        border:10px solid #f0c0c0;
+        background-color: #f0c0c0;
+        
+    }
+
+    .flip-card:nth-child(1) .flip-card-inner .flip-card-back .flip-card-back__text{
+        background-color:#007d7d;
+
+    }
+    .flip-card:nth-child(2) .flip-card-inner .flip-card-back .flip-card-back__text{
+        background-color: #b7b700; 
+
+
+    }
+    .flip-card:nth-child(3) .flip-card-inner .flip-card-back .flip-card-back__text{
+
+        background-color:#d02a00;
+
+    }
+    .flip-card:nth-child(4) .flip-card-inner .flip-card-back .flip-card-back__text{
+
+        background-color:#dfc300;
+
+    }
+    .flip-card:nth-child(5) .flip-card-inner .flip-card-back .flip-card-back__text{
+
+        background-color:#f0c0c0; 
+
+    }
+
+
+}
+
 .flip-card {
     background-color: transparent;
     width: 210px;
@@ -169,3 +275,4 @@ main{
     bottom: 0;
     color: #fff;
 }
+
