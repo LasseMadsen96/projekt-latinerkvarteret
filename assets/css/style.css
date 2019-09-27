@@ -114,6 +114,7 @@ main{
 }
 .flip-card-back .flip-card-back__text h3{
     font-size:22px;
+    font-family: 'Montserrat', sans-serif;
 }
 .theme-color__culture{
     border:10px solid #007d7d;
