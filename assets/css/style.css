@@ -120,6 +120,7 @@ main{
     color: white;
     transform: rotateY(180deg);
 }
+
 .flip-card-back .flip-card-back__text{
     position:absolute;
     left:50%;
@@ -129,57 +130,72 @@ main{
     background-color:rgb(0,0,0,0.6);
     width:100%;
 }
+
 .flip-card-back .flip-card-back__text h3{
     font-size:22px;
 }
+
 .theme-color__culture{
     border:10px solid #429699;
 }
+
 .theme-color__art{
     border:10px solid #a4c859;
 }
+
 .theme-color__fashion{
     border:10px solid #eacb4d;
 }
+
 .theme-color__design{
     border:10px solid #e84828;
 }
+
 .theme-color__food{
     border:10px solid #edb9d2;
 }
-#mainFooter{
+
+footer{ 
     position: relative;
-    min-height: 10vh;
+    width: 100%;
+    height: auto;
 }
-#mainFooter .so-me__icons{
+
+footer .so-me__icons{
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translate(-50%,0);
 }
-#mainFooter a{
+
+footer a{
     text-decoration: none;
     margin-left:15px;
 }
-#mainFooter .main-footer__cityscape{
+
+footer .main-footer__cityscape{
     width:100%;
     height:219px;
 }
-#mainFooter .instagram-icon{
+
+footer .instagram-icon{
     height:50px;
     width:50px;
 }
-#mainFooter .facebook-icon{
+
+footer .facebook-icon{
     height:50px;
     width:50px;
 }
-#mainFooter .main-footer__rightContact{
+
+footer .main-footer__rightContact{
     position: absolute;
     right: 20px;
     bottom: 0;
     color: #fff;
 }
-#mainFooter .main-footer__leftContact{
+
+footer .main-footer__leftContact{
     position: absolute;
     left: 20px;
     bottom: 0;
@@ -187,11 +203,6 @@ main{
 }
 
 
-
-footer{
-    width: 100%;
-    height: auto;
-}
 
 @media only screen and (min-width: 768px){
 
@@ -224,7 +235,7 @@ footer{
          margin-bottom: 0px;
     }
 
-   header .language-selection{
+    header .language-selection{
         position:absolute;
         right:20px;
         top:10px;
@@ -323,9 +334,5 @@ footer{
         background-color:#f0c0c0; 
     }
 
-    footer img{
-        width: 100%;
-        height: auto;
-    }
 }
 
