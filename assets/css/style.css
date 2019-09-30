@@ -2,7 +2,6 @@ body{
     margin: 0;
     font-family: Montserrat;
     background-color: #EDF2F7;  
-
 }
 
 header{
@@ -79,13 +78,13 @@ main{
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  width: 90%;
-  margin-top: 0px; 
-  margin-bottom: 10px;
+  width: 70%;
+  margin-top: 20px; 
+  margin-bottom: 20px;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-
+  z-index: 1;
 }
 
 .about-item {
@@ -95,22 +94,29 @@ main{
   color: black;
   border-radius: 8px;
   box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 10px 10px -5px rgba(0,0,0,.04);
-  width: 100%;
+  width: 70%;
   text-align: center;
   flex-shrink: 1;
-  margin-left: auto 10px;
-  margin-right: auto 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-item iframe{
+    width: 100%;
+    display: block;
+    margin: 10px auto;  
 }
 
 .about-item h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 .mobile-nav__button{
     display: none;
 }
+
 .flip-card__navigation{
     display: flex;
     justify-content: space-evenly;
@@ -121,9 +127,9 @@ main{
     background-color: transparent;
     width: 210px;
     height: 210px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px; 
 }
-/* This container is needed to position the front and back side */
+
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -132,18 +138,18 @@ main{
     transition: transform 0.6s;
     transform-style: preserve-3d;
 } 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }  
-/* Position the front and back side */
+
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
   }
-  /* Style the front side (fallback if image is missing) */
+
 .flip-card-front {
     background-color: #bbb;
     color: black;
@@ -151,11 +157,12 @@ main{
     overflow:hidden;
     box-shadow:0 0 5px black;
 }
+
 .flip-card-front img{
-      width:100%;
-      height:auto;
+    width:100%;
+    height:auto;
 }
-  /* Style the back side */
+
 .flip-card-back {
     color: white;
     transform: rotateY(180deg);
@@ -172,7 +179,7 @@ main{
 }
 
 .flip-card:nth-child(7){
-display: none;
+    display: none;
 }
 
 .flip-card-back .flip-card-back__text h3{
@@ -203,43 +210,10 @@ display: none;
     display:flex;
     justify-content: center;
 }
+
 .description-content .description-content__item{
     min-width: 30%;
     padding:20px;
-}
-
-.description-content{
-    width: 100%;
-    
-}
-
-
-.description-content__item{
-   width: 100%; 
-   margin: 25px;
-   padding: 20px;
-   background-color: #F7FAFC;
-   color: black;
-   border-radius: 8px;
-   box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 10px 10px -5px rgba(0,0,0,.04);
-   width: 100%;
-   text-align: center;
-   flex-shrink: 1;
-   margin-left: auto 10px;
-   margin-right: auto 10px;
-   
-}
-.description-content__item iframe{
-    width: 100%;
-    display: block;
-    margin: 10px auto;
-
-    
-}
-
-.flexcontainer{
-    display: flex;
-    flex-direction:row;
 }
 
 #mainFooter{
@@ -248,11 +222,43 @@ display: none;
     height: auto;
 }
 
+.navbar {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar a {
+    color: #F7FAFC;
+    background-color: #1985A1;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 17px;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 10px 10px -5px rgba(0,0,0,.04);
+}
+
+.navbar a:hover {
+    background-color: #F7FAFC;
+    color: #1985A1;
+}
+
+.nav-item {
+    border: 1.5px solid #1985A1;
+}
+
 footer .so-me__icons{
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translate(-50%,0);
+    margin-bottom: 15px;
 }
 
 footer a{
@@ -340,14 +346,14 @@ footer .main-footer__leftContact{
         margin-left:15px;
     }
 
-    .about {
-        width: 90%;
-    }
+  .about {
+    width: 100%;
+  }
 
-    .about-item {
+  .about-item {
         margin-left: auto;
-        margin-right: auto;
-    }
+    margin-right: auto;
+  }
 
     .mobile-nav__button{
         display: block;
@@ -357,21 +363,28 @@ footer .main-footer__leftContact{
         left: 20px;
         top: -45px;
     }
-        .mobile-nav__button i{
-            font-size: 28px;
-        }
+
+    .mobile-nav__button i{
+        font-size: 28px;
+
+    }
+
     .flip-card__navigation{
         position: relative;
     }
+
     .flip-card{
         display:none;
     }
+
     .flip-card__navigation.active .flip-card{
         display: block;
     }
+
     .flip-card__navigation{
         flex-direction: column;
         justify-content: space-between; 
+
     }
 
     .flip-card .flip-card-inner .flip-card-front {
@@ -407,31 +420,30 @@ footer .main-footer__leftContact{
         height: 100%;
         backface-visibility: visible;
         transform: none;
-      }
+    }
 
     .flip-card .flip-card-inner .flip-card-front.theme-color__culture{
-        border:10px solid #429699;
-        background-color: #429699;
 
+        background-color: #429699;
     }
 
     .flip-card .flip-card-inner .flip-card-front.theme-color__art{
-        border:10px solid #a4c859;
+
         background-color: #a4c859;
     }
 
     .flip-card .flip-card-inner .flip-card-front.theme-color__fashion{
-        border:10px solid #eacb4d;
+
         background-color: #eacb4d;
     }
 
     .flip-card .flip-card-inner .flip-card-front.theme-color__design{
-        border:10px solid #dfc300;
+
         background-color: #dfc300;
     }
 
     .flip-card .flip-card-inner .flip-card-front.theme-color__food{
-        border:10px solid #edb9d2;
+
         background-color: #edb9d2;
     }
 
@@ -459,19 +471,13 @@ footer .main-footer__leftContact{
     .movie{
         width: 100%;
     }
-    .description-content{
-        width: 100%;
-    }
 
 
-    .description-content__item{
-       width: 100%; 
-    }
 
-    .description-content__item iframe{
-        width: 100%;
-        display: block;
-        margin: 0 auto;
+    .dabout-item iframe{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
     }
 
     footer .main-footer__rightContact{
