@@ -1,169 +1,116 @@
 body{
     margin: 0;
+    font-family: Montserrat;
+    background-color: #EDF2F7;  
+
 }
 
-#mainHeader{
+header{
     max-height: 40vh;
     height: 40vh;
     position: relative;
 }
-#mainHeader .language-selection{
+
+header .language-selection{
     position:absolute;
     right:20px;
     top:10px;
 }
-#mainHeader .language-selection .lang-icon{
-    width:50px;
-    height:50px;
+
+header .language-selection .lang-icon{
+    width:40px;
+    height:40px;
     float:left;
     margin-left:15px;
 }
-#mainHeader img{
+
+header img{
     height: 100%;
     width: 100%;
 }
-#mainHeader .header-img{
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-}
-#mainHeader .main-Header__text{
+
+header .main-Header__text{
     position: absolute;
     left: 50%;
-    bottom: 10%;
+    bottom: 0%;
     transform: translate(-50%,0);
     text-align: center;
 }
-#mainHeader .main-Header__text img{
-    height: 250px;
-    width: 250px;
+
+header .main-Header__text img{
+    height: auto;
+    width: 20%;
 }
-#mainHeader .main-Header__text h2{
+
+header .main-Header__text h2{
     color: #fff; 
     font-size: 3.5em;
-    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
-#mainHeader .main-Header__text h2 span:nth-child(1){
-    color: #007d7d;
+
+header .main-Header__text h2 span:nth-child(1){
+    color: #429699;
 }
-#mainHeader .main-Header__text h2 span:nth-child(2){
-    color: #b7b700;
-    
+
+header .main-Header__text h2 span:nth-child(2){
+    color: #a4c859;   
 }
-#mainHeader .main-Header__text h2 span:nth-child(3){
-    color: #d02a00;
-    
+
+header .main-Header__text h2 span:nth-child(3){
+    color: #eacb4d;  
 }
-#mainHeader .main-Header__text h2 span:nth-child(4){
-    color: #dfc300;
-    
+
+header .main-Header__text h2 span:nth-child(4){
+    color: #e84828;  
 }
-#mainHeader .main-Header__text h2 span:nth-child(5){
-    color: #f0c0c0;
+
+header .main-Header__text h2 span:nth-child(5){
+    color: #edb9d2;
 }
+
 main{
-    margin-top: 40px;
+    margin-bottom: 40px;
     min-height: 40vh;
 }
+
+.about {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 90%;
+  margin-top: 0px; 
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.about-item {
+  margin: 20px;
+  padding: 20px;
+  background-color: #F7FAFC;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 10px 10px -5px rgba(0,0,0,.04);
+  width: 100%;
+  text-align: center;
+  flex-shrink: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-item h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
 .flip-card__navigation{
     display: flex;
     justify-content: space-evenly;
-}
-@media only screen and (min-width: 768px){
-    .flip-card__navigation{
-        display: flex;
-    }
-}
-@media only screen and (max-width: 767px){
-    #mainHeader .main-Header__text img{
-        height: 100px;
-        width: 100px;
-    }
-    
-    #mainHeader .main-Header__text h2{
-        font-size: 1em;
-    }
-    .main-Header__text .logo{
-    height: 80px;
-    }
-
-    
-    .flip-card__navigation{
-        flex-direction: column;
-        justify-content: space-between; 
-    }
-
-    .flip-card .flip-card-inner .flip-card-front {
-        border-radius: 0;
-    }
-
-    .flip-card__navigation .flip-card{
-
-    width: 100%;
-    height: 74px;
-    }
-    
-    .flip-card__navigation .flip-card:hover .flip-card-inner {
-        transform: none;
-    }  
-    .flip-card__navigation .flip-card .flip-card-inner .flip-card-front{
-        display: none;
-    }
-    .flip-card .flip-card-inner .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: visible;
-        transform: none;
-      }
-    .flip-card .flip-card-inner .flip-card-front.theme-color__culture{
-        border:0px solid #007d7d;
-        background-color: #007d7d;
-
-    }
-    .flip-card .flip-card-inner .flip-card-front.theme-color__art{
-        border:10px solid #b7b700;
-        background-color: #b7b700;
-    }
-    .flip-card .flip-card-inner .flip-card-front.theme-color__fashion{
-        border:10px solid #d02a00;
-        background-color: #d02a00;
-    }
-    .flip-card .flip-card-inner .flip-card-front.theme-color__design{
-        border:10px solid #dfc300;
-        background-color: #dfc300;
-    }
-    .flip-card .flip-card-inner .flip-card-front.theme-color__food{
-        border:10px solid #f0c0c0;
-        background-color: #f0c0c0;
-        
-    }
-
-    .flip-card:nth-child(1) .flip-card-inner .flip-card-back .flip-card-back__text{
-        background-color:#007d7d;
-
-    }
-    .flip-card:nth-child(2) .flip-card-inner .flip-card-back .flip-card-back__text{
-        background-color: #b7b700; 
-
-
-    }
-    .flip-card:nth-child(3) .flip-card-inner .flip-card-back .flip-card-back__text{
-
-        background-color:#d02a00;
-
-    }
-    .flip-card:nth-child(4) .flip-card-inner .flip-card-back .flip-card-back__text{
-
-        background-color:#dfc300;
-
-    }
-    .flip-card:nth-child(5) .flip-card-inner .flip-card-back .flip-card-back__text{
-
-        background-color:#f0c0c0; 
-
-    }
-
-
 }
 
 .flip-card {
@@ -202,13 +149,14 @@ main{
 }
 .flip-card-front img{
       width:100%;
-      height:100%;
+      height:auto;
 }
   /* Style the back side */
 .flip-card-back {
     color: white;
     transform: rotateY(180deg);
 }
+
 .flip-card-back .flip-card-back__text{
     position:absolute;
     left:50%;
@@ -218,24 +166,29 @@ main{
     background-color:rgb(0,0,0,0.6);
     width:100%;
 }
+
 .flip-card-back .flip-card-back__text h3{
     font-size:22px;
-    font-family: 'Montserrat', sans-serif;
 }
+
 .theme-color__culture{
-    border:10px solid #007d7d;
+    border: 7px solid #429699;
 }
+
 .theme-color__art{
-    border:10px solid #b7b700;
+    border:7px solid #a4c859;
 }
+
 .theme-color__fashion{
-    border:10px solid #d02a00;
+    border:7px solid #eacb4d;
 }
+
 .theme-color__design{
-    border:10px solid #dfc300;
+    border:7px solid #e84828;
 }
+
 .theme-color__food{
-    border:10px solid #f0c0c0;
+    border:7px solid #edb9d2;
 }
 
 .description-content{
@@ -249,40 +202,196 @@ main{
 
 #mainFooter{
     position: relative;
-    min-height: 10vh;
+    width: 100%;
+    height: auto;
 }
-#mainFooter .so-me__icons{
+
+footer .so-me__icons{
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translate(-50%,0);
 }
-#mainFooter a{
+
+footer a{
     text-decoration: none;
     margin-left:15px;
 }
-#mainFooter .main-footer__cityscape{
+
+footer .main-footer__cityscape{
     width:100%;
     height:219px;
 }
-#mainFooter .instagram-icon{
+
+footer .instagram-icon{
     height:50px;
     width:50px;
 }
-#mainFooter .facebook-icon{
+
+footer .facebook-icon{
     height:50px;
     width:50px;
 }
-#mainFooter .main-footer__rightContact{
+
+footer .main-footer__rightContact{
     position: absolute;
     right: 20px;
     bottom: 0;
     color: #fff;
 }
-#mainFooter .main-footer__leftContact{
+
+footer .main-footer__leftContact{
     position: absolute;
     left: 20px;
     bottom: 0;
     color: #fff;
+}
+
+
+
+@media only screen and (min-width: 768px){
+
+    .flip-card__navigation{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 767px){
+
+    main{
+        padding-top: 0px;
+    }
+
+    header img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    header .main-Header__text img{
+        height: auto;
+        width: 20%;
+        margin-bottom: 0%;
+    }
+    
+    header .main-Header__text h2{
+        font-size: 1.5em;
+        margin-bottom: 30%;
+        padding-bottom: 0px;
+    }
+
+    .main-Header__text .logo{
+         height: 80px;
+         margin-bottom: 0px;
+    }
+
+    header .language-selection{
+        position:absolute;
+        right:20px;
+        top:10px;
+    }
+
+    header .language-selection .lang-icon{
+        width:30px;
+        height:30px;
+        float:left;
+        margin-left:15px;
+    }
+
+    .about {
+        width: 90%;
+    }
+
+    .about-item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flip-card__navigation{
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+
+    .flip-card .flip-card-inner .flip-card-front {
+        border-radius: 0;
+    }
+
+    .flip-card__navigation .flip-card{
+        width: 100%;
+        height: 74px;
+        margin-top: 0px;
+    }
+
+    header{
+        margin-bottom: 0px;
+    }
+
+    main{
+        margin-top: 0px;
+        min-height: 0vh;
+    }
+    
+    .flip-card__navigation .flip-card:hover .flip-card-inner {
+        transform: none;
+    }  
+
+    .flip-card__navigation .flip-card .flip-card-inner .flip-card-front{
+        display: none;
+    }
+
+    .flip-card .flip-card-inner .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: visible;
+        transform: none;
+      }
+
+    .flip-card .flip-card-inner .flip-card-front.theme-color__culture{
+        border:10px solid #429699;
+        background-color: #429699;
+
+    }
+
+    .flip-card .flip-card-inner .flip-card-front.theme-color__art{
+        border:10px solid #a4c859;
+        background-color: #a4c859;
+    }
+
+    .flip-card .flip-card-inner .flip-card-front.theme-color__fashion{
+        border:10px solid #eacb4d;
+        background-color: #eacb4d;
+    }
+
+    .flip-card .flip-card-inner .flip-card-front.theme-color__design{
+        border:10px solid #dfc300;
+        background-color: #dfc300;
+    }
+
+    .flip-card .flip-card-inner .flip-card-front.theme-color__food{
+        border:10px solid #edb9d2;
+        background-color: #edb9d2;
+    }
+
+    .flip-card:nth-child(1) .flip-card-inner .flip-card-back .flip-card-back__text{
+        background-color:#429699;
+    }
+
+    .flip-card:nth-child(2) .flip-card-inner .flip-card-back .flip-card-back__text{
+        background-color: #b7b700; 
+    }
+
+    .flip-card:nth-child(3) .flip-card-inner .flip-card-back .flip-card-back__text{
+        background-color:#d02a00;
+    }
+
+    .flip-card:nth-child(4) .flip-card-inner .flip-card-back .flip-card-back__text{
+        background-color:#dfc300;
+    }
+
+    .flip-card:nth-child(5) .flip-card-inner .flip-card-back .flip-card-back__text{
+        background-color:#f0c0c0; 
+    }
+
 }
 
