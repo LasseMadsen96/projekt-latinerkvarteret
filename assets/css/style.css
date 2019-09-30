@@ -237,6 +237,16 @@ main{
 .theme-color__food{
     border:10px solid #f0c0c0;
 }
+
+.description-content{
+    display:flex;
+    justify-content: center;
+}
+.description-content .description-content__item{
+    min-width: 30%;
+    padding:20px;
+}
+
 #mainFooter{
     position: relative;
     min-height: 10vh;
