@@ -8,7 +8,8 @@
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!--SEO-->
 	<meta name="description" content="Latinerkvarteret i hjertet af Odense">
     <meta property="og:type" content="website">
@@ -48,14 +49,11 @@
     </header>
     <main>
     	
-  	<section class="about">
-    	<div class="about-item">
-     		<h1>Hvad er Latinerkvarteret i Odense?</h1>
-     	 	<p>Latinerkvarteret er en stemningsfuld og unik perle i det centrale og hyggelige Odense. Gaderne blomstrer med kunst og kultur samt butikker og restauranter, som hver især har et unikt præg på bybilledet. Variationen i udvalg af butikker og kulturarrangementer som Blomsterfestival og H.C. Andersen festival drager folk med alle interesser og alle aldre til området. I latinerkvarteret er der noget for enhver smag. City bussen er gratis og tager dig og dine venner, din kæreste eller din familie direkte ind til midten af eventyret hvor i kan forkæle alle sanser.</p>
-    	</div>
+  	
 
   	</section> 
         <div class="flip-card__navigation">
+          <button class="mobile-nav__button"><i class="fa fa-bars"></i></button>
             <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front theme-color__culture">
@@ -116,24 +114,53 @@
                   </div>
                 </div>
               </div>
+
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front theme-color__contact">
+                    <img src="assets/img/gastronomi.jpg" alt="kontaktside">
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="flip-card-back__text">
+                      <h3>Kontakt</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+        </div>
+
+        <section class="flexcontainer">
+
+        <div class="about">
+          <div class="about-item">
+             <h1>Hvad er Latinerkvarteret i Odense?</h1>
+              <p>Latinerkvarteret er en stemningsfuld og unik perle i det centrale og hyggelige Odense. Gaderne blomstrer med kunst og kultur samt butikker og restauranter, som hver især har et unikt præg på bybilledet. Variationen i udvalg af butikker og kulturarrangementer som Blomsterfestival og H.C. Andersen festival drager folk med alle interesser og alle aldre til området. I latinerkvarteret er der noget for enhver smag. City bussen er gratis og tager dig og dine venner, din kæreste eller din familie direkte ind til midten af eventyret hvor i kan forkæle alle sanser.</p>
+          </div>
         </div>
 
         <div class="description-content">
+            
             <div class="description-content__item">
                 <h2>Titel</h2>
-                <h3>Undertitel</h3>
-                <p>some text</p>
-            </div>
-            <div class="description-content__item">
-                <h2>Titel</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/eKFTSSKCzWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eKFTSSKCzWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="movie"></iframe>
             </div>
         </div>
-      
+      </section>
+        
 
     </main> 
-    <footer>
-        <img src="assets/img/odense-landskab.png" alt="" class="main-footer__cityscape">
+    <footer id="mainFooter">
+        <picture class="main-footer__cityscape">
+          <source media="(min-width: 768px)" srcset="assets/img/odense-landskab.png">
+          <source media="(max-width: 767px)" srcset="assets/img/Asset2.png">
+          <img src="assets/img/odense-landskab.png" alt="Flowers" style="width:auto;">
+        </picture>
+
         <div class="main-footer__leftContact">
             <p>Jørgen Findsen, FINDSEN, Vestergade 104, 20 41 95 89</p>
         </div>
@@ -149,6 +176,7 @@
             </a>
         </div>
     </footer>
+    <script src="./assets/js/nav.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
