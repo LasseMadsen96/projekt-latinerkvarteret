@@ -1,7 +1,8 @@
 body{
     margin: 0;
     font-family: Montserrat;
-    background-color: #EDF2F7;  
+    background-color: #EDF2F7;
+    overflow-x: hidden; 
 }
 
 header{
@@ -101,10 +102,9 @@ main{
   margin-right: auto;
 }
 
-.about-item iframe{
-    width: 100%;
-    display: block;
-    margin: 10px auto;  
+ iframe{
+    margin-left: 20%;
+
 }
 
 .about-item h1 {
@@ -346,14 +346,14 @@ footer .main-footer__leftContact{
         margin-left:15px;
     }
 
-  .about {
-    width: 100%;
-  }
+    .about {
+        width: 100%;
+    }
 
-  .about-item {
+    .about-item {
         margin-left: auto;
-    margin-right: auto;
-  }
+        margin-right: auto;
+    }
 
     .mobile-nav__button{
         display: block;
@@ -366,7 +366,6 @@ footer .main-footer__leftContact{
 
     .mobile-nav__button i{
         font-size: 28px;
-
     }
 
     .flip-card__navigation{
@@ -384,7 +383,6 @@ footer .main-footer__leftContact{
     .flip-card__navigation{
         flex-direction: column;
         justify-content: space-between; 
-
     }
 
     .flip-card .flip-card-inner .flip-card-front {
@@ -468,9 +466,11 @@ footer .main-footer__leftContact{
     }
     
     
-    .movie{
+    iframe {
         width: 100%;
+        margin-left: 30%;
     }
+
 
 
 
@@ -491,13 +491,13 @@ footer .main-footer__leftContact{
     footer .instagram-icon{
         height:30px;
         width:30px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
     
     footer .facebook-icon{
         height:30px;
         width:30px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
     
     #mainFooter .main-footer__cityscape img{
@@ -513,4 +513,3 @@ footer .main-footer__leftContact{
 
     
 }
-
